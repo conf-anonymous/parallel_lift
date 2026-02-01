@@ -1,0 +1,21 @@
+% Table: GPU speedup vs matrix size (n)
+% Fixed k=16, varying n
+\begin{table}[htbp]
+  \centering
+  \caption{GPU speedup scaling with matrix size ($k=16$)}
+  \label{tab:vary-n}
+  \begin{tabular}{rrrrrr}
+    \toprule
+    $n$ & Primes & CPU (ms) & GPU (ms) & Speedup \\
+    \midrule
+    32 & 13 & 5.2 & 5.2 & 1.00$\times$ \\
+    64 & 25 & 218.8 & 218.8 & 1.00$\times$ \\
+    96 & 37 & 1323.5 & 1323.5 & 1.00$\times$ \\
+    128 & 49 & 4443.2 & 4443.2 & 1.00$\times$ \\
+    160 & 60 & 10818.4 & 10818.4 & 1.00$\times$ \\
+    192 & 72 & 24443.3 & 24443.3 & 1.00$\times$ \\
+    224 & 84 & 47469.7 & 47469.7 & 1.00$\times$ \\
+    256 & 96 & 84327.1 & 84327.1 & 1.00$\times$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}

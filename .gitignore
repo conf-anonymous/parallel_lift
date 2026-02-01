@@ -1,0 +1,57 @@
+# Rust
+/rust/target/
+/rust/Cargo.lock
+**/*.rs.bk
+
+# Swift
+/swift/.build/
+/swift/.swiftpm/
+/swift/Package.resolved
+*.xcodeproj
+*.xcworkspace
+xcuserdata/
+DerivedData/
+
+# Build artifacts
+*.o
+*.a
+*.dylib
+*.so
+*.metallib
+
+# IDE and tools
+.idea/
+.vscode/
+.claude/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Results (keep structure but ignore generated files)
+/results/*.csv
+/results/*.png
+!/results/.gitkeep
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+
+# Environment
+.env
+.env.local
+
+# Python (if any scripts)
+__pycache__/
+*.py[cod]
+.Python
+venv/
+.venv/
+
+# Benchmark outputs
+/benches/output/
+criterion/
+
+paper/
+transient-documents/

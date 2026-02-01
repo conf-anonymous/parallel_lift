@@ -1,0 +1,8 @@
+Parallel Lift
+Copyright 2026 Anonymous Authors
+
+This product includes software developed for anonymous review.
+
+Parallel Lift is a GPU-accelerated exact integer arithmetic library
+using the Chinese Remainder Theorem (CRT) for zero-knowledge proof
+preprocessing and cryptographic applications.

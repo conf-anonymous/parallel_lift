@@ -1,0 +1,4 @@
+n,matrix,b,expected_x,notes
+2,[2;1;1;3],[5;10],[1;3],Simple 2x2 system
+2,[1;0;0;1],[5;7],[5;7],Identity matrix
+3,[1;0;0;0;1;0;0;0;1],[1;2;3],[1;2;3],3x3 identity

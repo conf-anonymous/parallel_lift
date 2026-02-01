@@ -1,0 +1,17 @@
+[package]
+name = "parallel_lift_core"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Core CRT/RNS arithmetic for exact computation"
+
+[dependencies]
+num-bigint = { workspace = true }
+num-traits = { workspace = true }
+num-integer = { workspace = true }
+rayon = { workspace = true }
+rand = "0.8"
+
+[dev-dependencies]
+criterion = { workspace = true }

@@ -1,0 +1,21 @@
+[package]
+name = "parallel_lift_metal"
+version = "0.1.0"
+edition = "2021"
+description = "Metal GPU backend for parallel_lift"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+parallel_lift_core = { path = "../parallel_lift_core" }
+metal = "0.28"
+objc = "0.2"
+block = "0.1"
+dispatch = "0.2"
+num-bigint = "0.4"
+num-traits = "0.2"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+cocoa-foundation = "0.1"
+
+[features]
+default = []

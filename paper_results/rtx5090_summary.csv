@@ -1,0 +1,20 @@
+benchmark,n,k,metric,value,unit,notes
+gpu_full_pipeline,32,16,speedup,61.5,x,CPU vs GPU+GPU_CRT
+gpu_full_pipeline,64,16,speedup,198.9,x,CPU vs GPU+GPU_CRT
+gpu_full_pipeline,128,16,speedup,607.6,x,CPU vs GPU+GPU_CRT
+gpu_full_pipeline,256,16,speedup,1565.9,x,CPU vs GPU+GPU_CRT
+gpu_full_pipeline,256,16,cpu_time,546467.4,ms,total CPU time
+gpu_full_pipeline,256,16,gpu_time,349.0,ms,total GPU+GPU_CRT time
+hensel_vs_iml,32,16,speedup,2.81,x,Hensel faster than IML
+hensel_vs_iml,64,16,speedup,1.56,x,Hensel faster than IML
+hensel_vs_iml,128,16,speedup,1.46,x,Hensel faster than IML
+hensel_vs_iml,256,16,speedup,1.24,x,Hensel faster than IML
+hensel_vs_crt,128,16,speedup,1.25,x,Hensel faster than CRT
+hensel_vs_crt,256,16,speedup,1.31,x,Hensel faster than CRT
+gpu_crt,512,4096,speedup,28.2,x,CPU vs GPU CRT reconstruction
+gpu_crt,128,4096,speedup,32.1,x,CPU vs GPU CRT reconstruction
+zk_merkle,128,16,speedup,58.8,x,CPU vs CUDA
+zk_sparse,128,16,speedup,11.8,x,CPU vs CUDA
+pipeline_async,128,8,speedup,7.48,x,sequential vs async pipeline
+multi_rhs,256,16,speedup,172.3,x,CPU vs GPU (with CPU CRT)
+sparse_vs_dense,512,16,speedup,2.55,x,sparse Wiedemann vs dense

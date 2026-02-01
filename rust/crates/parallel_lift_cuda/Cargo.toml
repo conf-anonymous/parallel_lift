@@ -1,0 +1,21 @@
+[package]
+name = "parallel_lift_cuda"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+parallel_lift_core = { path = "../parallel_lift_core" }
+cudarc = { version = "0.12", features = ["cuda-12040"] }
+thiserror = "1.0"
+num-bigint = "0.4"
+num-traits = "0.2"
+
+[build-dependencies]
+cc = "1.0"
+
+[features]
+default = []
+# Enable for systems without CUDA (compile-time stub)
+stub = []

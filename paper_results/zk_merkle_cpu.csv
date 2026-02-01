@@ -1,0 +1,8 @@
+metric,value
+num_primes,50
+total_ms,6708.912962
+residue_ms,0.172648
+solve_ms,6665.357614
+crt_ms,43.382700
+result_hash,e75d59767aba8622a6384f471ea5289312a0f43db091681bad929b2c8f189465
+verified,true

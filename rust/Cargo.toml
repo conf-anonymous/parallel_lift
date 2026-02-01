@@ -1,0 +1,43 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/parallel_lift_core",
+    "crates/parallel_lift_metal",
+    "crates/parallel_lift_cuda",
+    "crates/parallel_lift_cli",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Anonymous"]
+license = "Apache-2.0"
+repository = "https://github.com/conf-anonymous/parallel_lift"
+
+[workspace.dependencies]
+# Core dependencies
+num-bigint = "0.4"
+num-traits = "0.2"
+num-integer = "0.1"
+
+# Metal (Apple Silicon)
+metal = "0.28"
+objc = "0.2"
+block = "0.1"
+
+# CLI
+clap = { version = "4.4", features = ["derive"] }
+csv = "1.3"
+serde = { version = "1.0", features = ["derive"] }
+
+# Async/concurrency
+rayon = "1.8"
+crossbeam = "0.8"
+
+# Testing/benching
+criterion = "0.5"
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3

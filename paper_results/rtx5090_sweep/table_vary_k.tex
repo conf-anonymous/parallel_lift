@@ -1,0 +1,20 @@
+% Table: GPU speedup vs number of RHS vectors (k)
+% Fixed n=128, varying k
+\begin{table}[htbp]
+  \centering
+  \caption{GPU speedup scaling with RHS vectors ($n=128$)}
+  \label{tab:vary-k}
+  \begin{tabular}{rrrrrr}
+    \toprule
+    $k$ & Primes & CPU (ms) & GPU (ms) & Speedup \\
+    \midrule
+    1 & 49 & 286.9 & 286.9 & 1.00$\times$ \\
+    2 & 49 & 565.2 & 565.2 & 1.00$\times$ \\
+    4 & 49 & 1126.7 & 1126.7 & 1.00$\times$ \\
+    8 & 49 & 2257.7 & 2257.7 & 1.00$\times$ \\
+    16 & 49 & 4439.4 & 4439.4 & 1.00$\times$ \\
+    32 & 49 & 9279.6 & 9279.6 & 1.00$\times$ \\
+    64 & 49 & 18809.8 & 18809.8 & 1.00$\times$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}

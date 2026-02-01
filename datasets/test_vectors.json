@@ -1,0 +1,58 @@
+{
+  "description": "Shared test vectors for parallel_lift implementations",
+  "version": "1.0",
+  "test_cases": {
+    "determinant_2x2": {
+      "description": "2x2 matrix determinant",
+      "matrix": [1, 2, 3, 4],
+      "n": 2,
+      "expected_det": -2
+    },
+    "determinant_3x3_singular": {
+      "description": "3x3 singular matrix (det = 0)",
+      "matrix": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "n": 3,
+      "expected_det": 0
+    },
+    "determinant_3x3_nonsingular": {
+      "description": "3x3 non-singular matrix",
+      "matrix": [1, 2, 3, 4, 5, 6, 7, 8, 10],
+      "n": 3,
+      "expected_det": -3
+    },
+    "solve_2x2": {
+      "description": "2x2 linear system",
+      "matrix": [2, 1, 1, 3],
+      "b": [5, 10],
+      "n": 2,
+      "expected_x": [1, 3]
+    },
+    "crt_reconstruction": {
+      "description": "CRT reconstruction test",
+      "value": 12345,
+      "primes": [2147483647, 2147483629, 2147483587],
+      "residues": [12345, 12345, 12345]
+    },
+    "crt_signed_reconstruction": {
+      "description": "Signed CRT reconstruction test",
+      "value": -12345,
+      "primes": [2147483647, 2147483629, 2147483587],
+      "notes": "Residues are positive representations of -12345 mod each prime"
+    }
+  },
+  "primes_31bit": {
+    "description": "First 10 31-bit primes (descending from 2^31-1)",
+    "primes": [
+      2147483647,
+      2147483629,
+      2147483587,
+      2147483579,
+      2147483549,
+      2147483543,
+      2147483497,
+      2147483489,
+      2147483477,
+      2147483423
+    ]
+  }
+}

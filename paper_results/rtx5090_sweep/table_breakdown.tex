@@ -1,0 +1,18 @@
+% Table: Phase breakdown (residue/solve/CRT)
+% Shows how time is distributed across phases as n grows
+\begin{table}[htbp]
+  \centering
+  \caption{Phase breakdown evolution ($k=16$)}
+  \label{tab:breakdown}
+  \begin{tabular}{rrrrrrr}
+    \toprule
+    $n$ & Primes & Total (ms) & Residue \% & Solve \% & CRT \% \\
+    \midrule
+    32 & 13 & 8.7 & 0.3\% & 64.5\% & 35.1\% \\
+    64 & 25 & 243.3 & 0.0\% & 94.5\% & 5.5\% \\
+    128 & 49 & 4850.0 & 0.0\% & 98.8\% & 1.2\% \\
+    192 & 72 & 26369.6 & 0.0\% & 99.5\% & 0.5\% \\
+    256 & 96 & 82075.0 & 0.0\% & 99.7\% & 0.3\% \\
+    \bottomrule
+  \end{tabular}
+\end{table}
